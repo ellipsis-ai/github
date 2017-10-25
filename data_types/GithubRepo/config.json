@@ -1,0 +1,10 @@
+{
+  "exportId" : "vne9aZ6eQ_6hOFwnSm3alg",
+  "name" : "GithubRepo",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

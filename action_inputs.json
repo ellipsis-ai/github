@@ -1,0 +1,31 @@
+[ {
+  "exportId" : "2c2abbQ9Re-gfyepkhSC3Q",
+  "name" : "title",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What's the title of the issue?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "TnqANnwwQZGGcx4GlBRzqw",
+  "name" : "repo",
+  "paramType" : {
+    "exportId" : "vne9aZ6eQ_6hOFwnSm3alg",
+    "name" : "GithubRepo"
+  },
+  "question" : "Which repo? (I'll remember next time)",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : true
+}, {
+  "exportId" : "sbTJmKljQButl8kY_5TQCQ",
+  "name" : "body",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Describe the issue",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+} ]
