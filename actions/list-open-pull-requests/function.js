@@ -7,7 +7,6 @@ github.authenticate({
   token: ellipsis.accessTokens.github
 });
 
-
 const owner = repo.id.split("/")[0];
 const repoName = repo.id.split("/")[1];
 github.pullRequests.getAll({
