@@ -8,6 +8,7 @@ github.authenticate({
   token: ellipsis.accessTokens.github
 });
 
+
 github.issues.getAll({
   filter: "assigned"
 }, function(err, res) {
