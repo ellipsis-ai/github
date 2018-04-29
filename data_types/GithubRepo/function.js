@@ -1,5 +1,5 @@
 function(ellipsis) {
-  const GitHubApi = require("github");
+  const GitHubApi = require("@octokit/rest");
 const github = new GitHubApi();
 
 github.authenticate({

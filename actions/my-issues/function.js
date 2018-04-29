@@ -1,6 +1,6 @@
 function(ellipsis) {
   const groupBy = require('group-by');
-const GitHubApi = require("github");
+const GitHubApi = require("@octokit/rest");
 const github = new GitHubApi();
 
 github.authenticate({
