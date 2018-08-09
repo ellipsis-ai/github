@@ -2,5 +2,7 @@
   "exportId" : "U6XSsKnhR-GCrCUB9SqXwQ",
   "name" : "my-issues",
   "forcePrivateResponse" : false,
-  "isDataType" : false
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }

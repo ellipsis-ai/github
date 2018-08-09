@@ -2,5 +2,7 @@
   "exportId" : "DeY65fjDQN6NGM9wdfzmig",
   "name" : "list-open-pull-requests",
   "forcePrivateResponse" : false,
-  "isDataType" : false
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }

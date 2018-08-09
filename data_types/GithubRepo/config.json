@@ -2,7 +2,9 @@
   "exportId" : "vne9aZ6eQ_6hOFwnSm3alg",
   "name" : "GithubRepo",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
+  "isTest" : false,
   "dataTypeConfig" : {
     "fields" : [ ],
     "usesCode" : true
