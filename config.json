@@ -3,7 +3,7 @@
   "exportId" : "NIi0BJH-Q_StBCsroFh5BQ",
   "icon" : "💻",
   "requiredAWSConfigs" : [ ],
-  "requiredOAuth2ApiConfigs" : [ {
+  "requiredOAuthApiConfigs" : [ {
     "exportId" : "Egrla6yTRS-cbquh8-ORjg-lj8s5CF-QnSY8vtbnWj_BA-github",
     "apiId" : "lj8s5CF-QnSY8vtbnWj_BA",
     "recommendedScope" : "repo",
