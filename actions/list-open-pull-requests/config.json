@@ -1,6 +1,8 @@
 {
   "exportId" : "DeY65fjDQN6NGM9wdfzmig",
   "name" : "list-open-pull-requests",
-  "forcePrivateResponse" : false,
-  "isDataType" : false
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }

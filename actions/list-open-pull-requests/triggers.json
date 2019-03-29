@@ -2,10 +2,12 @@
   "text" : "github open PRs",
   "requiresMention" : false,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 }, {
   "text" : "github open pull requests",
   "requiresMention" : false,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 } ]

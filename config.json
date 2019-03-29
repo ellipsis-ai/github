@@ -4,7 +4,7 @@
   "icon" : "💻",
   "requiredAWSConfigs" : [ ],
   "requiredOAuthApiConfigs" : [ {
-    "exportId" : "Egrla6yTRS-cbquh8-ORjg-lj8s5CF-QnSY8vtbnWj_BA-github",
+    "exportId" : "29aYz9zCTFulFIfrPZ4vLA",
     "apiId" : "lj8s5CF-QnSY8vtbnWj_BA",
     "recommendedScope" : "repo",
     "nameInCode" : "github"
