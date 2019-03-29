@@ -1,6 +1,8 @@
 {
   "exportId" : "loAWeTQcS7mVB_CueEjk-Q",
   "name" : "new-issue",
-  "forcePrivateResponse" : true,
-  "isDataType" : false
+  "responseTypeId" : "Private",
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }

@@ -1,10 +1,7 @@
 function(title, body, repo, ellipsis) {
-  const GitHubApi = require("@octokit/rest");
-const github = new GitHubApi();
-
-github.authenticate({
-  type: "oauth",
-  token: ellipsis.accessTokens.github
+  const Octokit = ellipsis.require("@octokit/rest@16.21.1");
+const github = new Octokit({
+  auth: `token ${ellipsis.accessTokens.github}`
 });
 
 const owner = repo.id.split("/")[0];
@@ -14,11 +11,7 @@ github.issues.create({
   repo: repoName,
   title: title,
   body: body
-}, function(err, res) {
-  if (err) {
-    ellipsis.error(err.toString());
-  } else {
-    ellipsis.success(res.data)
-  }
+}).then((res) => {
+  ellipsis.success(res.data)
 });
 }

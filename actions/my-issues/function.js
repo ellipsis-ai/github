@@ -1,24 +1,17 @@
 function(ellipsis) {
-  const groupBy = require('group-by');
-const GitHubApi = require("@octokit/rest");
-const github = new GitHubApi();
-
-github.authenticate({
-  type: "oauth",
-  token: ellipsis.accessTokens.github
+  const groupBy = ellipsis.require('group-by@0.0.1');
+const Octokit = ellipsis.require("@octokit/rest@16.21.1");
+const github = new Octokit({
+  auth: `token ${ellipsis.accessTokens.github}`
 });
 
-github.issues.getAll({
+github.issues.list({
   filter: "assigned"
-}, function(err, res) {
-  if (err) {
-    ellipsis.error(err.toString());
-  } else {
-    const grouped = groupBy(res.data, "repository_url");
-    const groupedArray = Object.keys(grouped).map(repo => {
-      return { repo: repo, issues: grouped[repo] }
-    });
-    ellipsis.success(groupedArray);
-  }
+}).then((res) => {
+  const grouped = groupBy(res.data, "repository_url");
+  const groupedArray = Object.keys(grouped).map(repo => {
+    return { repo: repo, issues: grouped[repo] }
+  });
+  ellipsis.success(groupedArray);
 });
 }

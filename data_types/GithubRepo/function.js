@@ -1,19 +1,15 @@
-function(ellipsis) {
-  const GitHubApi = require("@octokit/rest");
-const github = new GitHubApi();
-
-github.authenticate({
-  type: "oauth",
-  token: ellipsis.accessTokens.github
+function(filter, ellipsis) {
+  const Octokit = ellipsis.require("@octokit/rest@16.21.1");
+const github = new Octokit({
+  auth: `token ${ellipsis.accessTokens.github}`
 });
 
-github.repos.getAll({}, function(err, res) {
-  if (err) {
-    ellipsis.error(err.toString());
-  } else {
-    ellipsis.success(res.data.map((ea) => {
-      return { id: ea.full_name, label: ea.full_name };
-    }));
-  }
+github.repos.list({
+  per_page: 100
+}).then((res) => {
+  const filtered = res.data.filter((ea) => ea.full_name.toLowerCase().includes(filter))
+  ellipsis.success(filtered.map((ea) => {
+    return { id: ea.full_name, label: ea.full_name };
+  }));
 });
 }
